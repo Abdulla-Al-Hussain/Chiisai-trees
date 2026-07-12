@@ -11,7 +11,7 @@ import Notfound from "../pages/Notfound/Notfound";
 
 import PrivateRoute from "./PrivateRoute";
 
-const router = createBrowserRouter([
+const Router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
@@ -79,4 +79,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default Router;

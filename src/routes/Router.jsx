@@ -7,7 +7,7 @@ import Login from "../pages/Login/Login";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import AddPlant from "../pages/AddPlant/AddPlant";
 import EditPlant from "../pages/EditPlant/EditPlant";
-import NotFound from "../pages/NotFound/NotFound";
+import Notfound from "../pages/Notfound/Notfound";
 
 import PrivateRoute from "./PrivateRoute";
 

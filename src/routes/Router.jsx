@@ -2,11 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/Mainlayout";
 import Home from "../pages/Home/Home";
 import Plants from "../pages/Plants/Plants";
-import PlantDetails from "../pages/PlantDetails/PlantDetails";
+import Plantdetails from "../pages/Plantdetails/Plantdetails";
 import Login from "../pages/Login/Login";
 import Dashboard from "../pages/Dashboard/Dashboard";
-import AddPlant from "../pages/AddPlant/AddPlant";
-import EditPlant from "../pages/EditPlant/EditPlant";
+import Addplant from "../pages/Addplant/Addplant";
+import Editplant from "../pages/Editplant/Editplant";
 import Notfound from "../pages/Notfound/Notfound";
 
 import PrivateRoute from "./PrivateRoute";
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       // Plant Details Page
       {
         path: "plant/:id",
-        element: <PlantDetails />,
+        element: <Plantdetails />,
       },
 
       // Login Page
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         path: "dashboard/add-plant",
         element: (
           <PrivateRoute>
-            <AddPlant />
+            <Addplant />
           </PrivateRoute>
         ),
       },
@@ -65,7 +65,7 @@ const router = createBrowserRouter([
   path: "dashboard/edit-plant/:id",
   element: (
     <PrivateRoute>
-      <EditPlant />
+      <Editplant />
     </PrivateRoute>
   ),
 },
@@ -75,7 +75,7 @@ const router = createBrowserRouter([
   // 404 Page
   {
     path: "*",
-    element: <NotFound />,
+    element: <Notfound />,
   },
 ]);
 
